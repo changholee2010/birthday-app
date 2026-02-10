@@ -1,14 +1,15 @@
-<template>
-  <div class="container">
-    <h1>🎂 Birthday Message Service</h1>
-    <p>Vue + GitHub Pages + Firebase</p>
-  </div>
-</template>
+<script setup>
+import { auth } from './firebase'
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
-<style>
-.container {
-  text-align: center;
-  margin-top: 100px;
-  font-family: Arial;
+const login = async () => {
+  const provider = new GoogleAuthProvider()
+  const result = await signInWithPopup(auth, provider)
+  console.log(result.user)
 }
-</style>
+</script>
+
+<template>
+  <h1>Birthday App</h1>
+  <button @click="login">Login with Google</button>
+</template>
