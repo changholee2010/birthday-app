@@ -2,6 +2,17 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+### directory
+my-board-project/
+├── client/ (Vue + Vite)
+│   ├── src/
+│   │   ├── views/ (Login, BoardList, BoardDetail, BoardWrite)
+│   │   └── api/ (axios interceptors)
+├── server/ (Node.js + Express)
+│   ├── config/ (dbConfig.js)
+│   ├── routes/ (auth.js, post.js)
+│   └── server.js
+
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
