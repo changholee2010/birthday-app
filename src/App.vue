@@ -2,6 +2,7 @@
   <div class="container">
     <h1>🎂 Birthday Message Service</h1>
     <p>Vue + GitHub Pages + Firebase</p>
+    <p>what is next?</p>
   </div>
 </template>
 
